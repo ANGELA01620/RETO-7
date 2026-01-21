@@ -58,7 +58,10 @@ for i in range(1, NUM_ROWS + 1):
 df = pd.DataFrame(data)
 
 # Exportar a CSV
-output_path = "../01_data/raw_sales_dump.csv"
+import os
+output_dir = os.path.join(os.path.dirname(__file__), "..", "01_data")
+os.makedirs(output_dir, exist_ok=True)
+output_path = os.path.join(output_dir, "raw_sales_dump.csv")
 df.to_csv(output_path, index=False)
 
 print(f"✅ Archivo generado exitosamente: {output_path}")
