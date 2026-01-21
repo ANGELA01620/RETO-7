@@ -67,5 +67,5 @@ ORDER BY Anio, Mes;
 
 ## resultados
 
-
+![Resultados del Reporte Financiero](https://raw.githubusercontent.com/ANGELA01620/RETO-7/main/04_docs_entregables/sql%20resultados.png)
 
